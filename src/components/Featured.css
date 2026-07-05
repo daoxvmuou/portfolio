@@ -1,0 +1,131 @@
+.featured__head {
+  margin-bottom: 80px;
+}
+
+.featured__dim {
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.featured__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.fcard {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  transition: border-color 0.4s ease, transform 0.5s var(--ease);
+}
+
+.fcard:hover {
+  border-color: var(--line-strong);
+}
+
+.fcard--rev {
+  grid-template-columns: 1fr 1.4fr;
+}
+
+.fcard--rev .fcard__media {
+  order: 2;
+}
+
+.fcard__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.fcard__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) brightness(0.9);
+  transition: transform 0.8s var(--ease), filter 0.5s ease;
+}
+
+.fcard:hover .fcard__media img {
+  transform: scale(1.04);
+  filter: saturate(1.05) brightness(1);
+}
+
+.fcard__index {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--line-strong);
+  backdrop-filter: blur(8px);
+}
+
+.fcard__body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 12px;
+}
+
+.fcard__cat {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.fcard__title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 3.4vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.fcard__desc {
+  color: var(--text-soft);
+  font-size: 16px;
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+.fcard__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.fcard__arrow {
+  transition: transform 0.3s ease;
+}
+
+.fcard:hover .fcard__arrow {
+  transform: translateX(6px);
+}
+
+@media (max-width: 1100px) {
+  .fcard,
+  .fcard--rev {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .fcard--rev .fcard__media {
+    order: 0;
+  }
+}
