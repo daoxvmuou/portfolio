@@ -138,6 +138,7 @@
   color: var(--text-soft);
   font-size: 15px;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 .gd__row {
