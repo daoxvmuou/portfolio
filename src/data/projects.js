@@ -93,7 +93,7 @@ export const profile = {
   github: 'https://github.com/daoxvmuou',
   steam: 'https://store.steampowered.com/',
   stats: [
-    { label: '已上线项目', value: '6+' },
+    { label: '已参与完成项目', value: '6+' },
     { label: '累计玩家', value: '120K' },
     { label: '开发年限', value: '3Y' },
     { label: '引擎覆盖', value: '3' },
