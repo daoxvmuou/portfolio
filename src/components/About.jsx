@@ -32,7 +32,7 @@ export default function About() {
               </a>
               <a className="about__contact" href={profile.github} target="_blank" rel="noreferrer">
                 <span className="about__contact-label">GitHub</span>
-                <span className="about__contact-value">github.com/yourname</span>
+                <span className="about__contact-value">github.com/daoxvmuou</span>
                 <span className="about__contact-arrow">↗</span>
               </a>
               <a className="about__contact" href={profile.steam} target="_blank" rel="noreferrer">

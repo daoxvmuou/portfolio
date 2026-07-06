@@ -90,7 +90,7 @@ export const profile = {
   intro:
     '5 年游戏开发经验，专注于玩法程序与引擎工具开发，热衷于在性能与体验之间寻找平衡。曾参与多款跨平台商业项目与独立游戏，擅长 Unity / Unreal / Godot 全栈管线。',
   email: '2322931055@qq.com',
-  github: 'https://github.com/',
+  github: 'https://github.com/daoxvmuou',
   steam: 'https://store.steampowered.com/',
   stats: [
     { label: '已上线项目', value: '6+' },
