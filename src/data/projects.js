@@ -89,7 +89,7 @@ export const profile = {
   role: 'Game Developer · 游戏开发工程师',
   intro:
     '5 年游戏开发经验，专注于玩法程序与引擎工具开发，热衷于在性能与体验之间寻找平衡。曾参与多款跨平台商业项目与独立游戏，擅长 Unity / Unreal / Godot 全栈管线。',
-  email: 'hello@example.com',
+  email: '2322931055@qq.com',
   github: 'https://github.com/',
   steam: 'https://store.steampowered.com/',
   stats: [
