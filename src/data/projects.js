@@ -88,14 +88,14 @@ export const profile = {
   name: 'YOUR NAME',
   role: 'Game Developer · 游戏开发工程师',
   intro:
-    '5 年游戏开发经验，专注于玩法程序与引擎工具开发，热衷于在性能与体验之间寻找平衡。曾参与多款跨平台商业项目与独立游戏，擅长 Unity / Unreal / Godot 全栈管线。',
+    '3年游戏开发经验，专注于玩法程序与引擎工具开发，热衷于在性能与体验之间寻找平衡。曾参与多款跨平台商业项目与GameJam游戏项目，擅长 Unity / Unreal / Godot 全栈管线。',
   email: '2322931055@qq.com',
   github: 'https://github.com/daoxvmuou',
   steam: 'https://store.steampowered.com/',
   stats: [
     { label: '已上线项目', value: '6+' },
     { label: '累计玩家', value: '120K' },
-    { label: '开发年限', value: '5Y' },
+    { label: '开发年限', value: '3Y' },
     { label: '引擎覆盖', value: '3' },
   ],
 }
