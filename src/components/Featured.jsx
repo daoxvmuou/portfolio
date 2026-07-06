@@ -30,10 +30,26 @@ export default function Featured() {
                 <span className="fcard__cat">{f.category}</span>
                 <h3 className="fcard__title">{f.title}</h3>
                 <p className="fcard__desc">{f.desc}</p>
-                <span className="fcard__more">
-                  查看更多
-                  <span className="fcard__arrow">→</span>
-                </span>
+
+                {f.techStack && (
+                  <div className="fcard__tech">
+                    {f.techStack.map((t) => (
+                      <span key={t} className="fcard__chip">{t}</span>
+                    ))}
+                  </div>
+                )}
+
+                {f.link && (
+                  <a
+                    className="fcard__link"
+                    href={f.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    访问项目
+                    <span className="fcard__arrow">→</span>
+                  </a>
+                )}
               </div>
             </article>
           ))}
