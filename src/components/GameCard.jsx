@@ -3,7 +3,16 @@ import './GameCard.css'
 export default function GameCard({ game, onOpen }) {
   const handleDownload = (e) => {
     e.stopPropagation()
-    window.open(game.download, '_blank', 'noopener')
+    if (game.downloadType === 'file') {
+      const a = document.createElement('a')
+      a.href = game.download
+      a.download = ''
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+    } else {
+      window.open(game.download, '_blank', 'noopener')
+    }
   }
 
   return (

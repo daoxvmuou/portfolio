@@ -13,7 +13,16 @@ export default function GameDetail({ game, onClose }) {
   }, [onClose])
 
   const handleDownload = () => {
-    window.open(game.download, '_blank', 'noopener')
+    if (game.downloadType === 'file') {
+      const a = document.createElement('a')
+      a.href = game.download
+      a.download = ''
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+    } else {
+      window.open(game.download, '_blank', 'noopener')
+    }
   }
 
   return (
@@ -66,10 +75,12 @@ export default function GameDetail({ game, onClose }) {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              前往下载 / 跳转
+              {game.downloadType === 'file' ? '下载安装包' : '前往下载页面'}
               <span className="gd__dl-arrow">↗</span>
             </button>
-            <span className="gd__hint">链接将在新窗口打开</span>
+            <span className="gd__hint">
+              {game.downloadHint || (game.downloadType === 'file' ? '文件将直接下载' : '链接将在新窗口打开')}
+            </span>
           </div>
         </div>
       </div>
