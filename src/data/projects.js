@@ -2,16 +2,17 @@
 export const games = [
   {
     id: 'game-1',
-    title: 'NEON DRIFT',
-    tagline: '霓虹赛博 · 街机竞速',
-    cover: 'https://images.unsplash.com/photo-1542751371-ad-c38f3c2d?w=1200&q=80',
+    title: '战争之海 · Sea of War',
+    tagline: 'Pirate Naval Combat · 多平台海战',
+    cover: '/games/sea-of-war.png',
     description:
-      '一款设定在 2099 年赛博都市的街机风格竞速游戏，支持本地双人分屏与在线匹配。采用自研漂移物理模型，配合动态光影与体积雾营造高速沉浸感。',
-    techStack: ['Unity 2022', 'C#', 'URP', 'Mirror Networking', 'Shader Graph'],
-    role: '主程序 / 玩法设计',
-    year: '2025',
-    download: 'https://example.com/download/neon-drift',
-    tags: ['Racing', 'Arcade', 'Multiplayer'],
+      '一款适合所有年龄段的独特海盗题材海战游戏。你将扮演一名海盗，购买和升级船只，与酷炫的船长交战，并与其他玩家（AI）展开战斗。\n\n技术特点：\n· 基于 Unity 开发，支持多平台（Android / iOS / Windows / Mac / Web）\n· 内置内购系统，支持 Android 32 位与 64 位、iOS 及全平台\n· 适配 Android S+ API 目标版本 31\n· 使用 Unity 长期支持版本（LTS），支持 IL2CPP',
+    techStack: ['Unity', 'C#'],
+    role: '开发者',
+    year: '2024',
+    download: '',
+    downloadHint: '即将上线',
+    tags: ['Action', 'Naval', 'Multi-platform'],
   },
   {
     id: 'game-2',

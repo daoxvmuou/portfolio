@@ -150,3 +150,14 @@
   color: #000;
   border-color: var(--accent);
 }
+
+.gcard__dl--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gcard__dl--disabled:hover {
+  background: none;
+  color: var(--text);
+  border-color: var(--line-strong);
+}

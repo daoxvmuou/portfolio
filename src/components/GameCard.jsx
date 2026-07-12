@@ -1,8 +1,10 @@
 import './GameCard.css'
 
 export default function GameCard({ game, onOpen }) {
+  const hasDownload = Boolean(game.download)
   const handleDownload = (e) => {
     e.stopPropagation()
+    if (!hasDownload) return
     if (game.downloadType === 'file') {
       const a = document.createElement('a')
       a.href = game.download
@@ -47,11 +49,15 @@ export default function GameCard({ game, onOpen }) {
           )}
         </div>
 
-        <button className="gcard__dl" onClick={handleDownload}>
+        <button
+          className={`gcard__dl ${hasDownload ? '' : 'gcard__dl--disabled'}`}
+          onClick={handleDownload}
+          disabled={!hasDownload}
+        >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
             <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          下载 / 跳转
+          {hasDownload ? '下载 / 跳转' : (game.downloadHint || '即将上线')}
         </button>
       </div>
     </article>

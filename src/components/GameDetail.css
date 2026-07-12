@@ -204,6 +204,18 @@
   box-shadow: 0 12px 30px -10px rgba(200, 255, 0, 0.5);
 }
 
+.gd__dl--disabled {
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  border: 1px solid var(--line);
+  cursor: not-allowed;
+}
+
+.gd__dl--disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .gd__dl-arrow {
   font-size: 13px;
 }

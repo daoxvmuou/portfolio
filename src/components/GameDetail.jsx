@@ -12,7 +12,9 @@ export default function GameDetail({ game, onClose }) {
     }
   }, [onClose])
 
+  const hasDownload = Boolean(game.download)
   const handleDownload = () => {
+    if (!hasDownload) return
     if (game.downloadType === 'file') {
       const a = document.createElement('a')
       a.href = game.download
@@ -71,15 +73,23 @@ export default function GameDetail({ game, onClose }) {
           </div>
 
           <div className="gd__footer">
-            <button className="gd__dl" onClick={handleDownload}>
+            <button
+              className={`gd__dl ${hasDownload ? '' : 'gd__dl--disabled'}`}
+              onClick={handleDownload}
+              disabled={!hasDownload}
+            >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              {game.downloadType === 'file' ? '下载安装包' : '前往下载页面'}
-              <span className="gd__dl-arrow">↗</span>
+              {hasDownload
+                ? (game.downloadType === 'file' ? '下载安装包' : '前往下载页面')
+                : (game.downloadHint || '即将上线')}
+              {hasDownload && <span className="gd__dl-arrow">↗</span>}
             </button>
             <span className="gd__hint">
-              {game.downloadHint || (game.downloadType === 'file' ? '文件将直接下载' : '链接将在新窗口打开')}
+              {hasDownload
+                ? (game.downloadHint || (game.downloadType === 'file' ? '文件将直接下载' : '链接将在新窗口打开'))
+                : '项目尚未提供下载地址'}
             </span>
           </div>
         </div>
