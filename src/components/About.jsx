@@ -14,7 +14,7 @@ export default function About() {
 
             <div className="about__avatar">
               <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&q=80"
+                src="/avatar.png"
                 alt="portrait"
               />
               <span className="about__avatar-ring" />
