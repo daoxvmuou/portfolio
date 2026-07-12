@@ -11,7 +11,7 @@ export default function Featured() {
             精选项目 <span className="featured__dim">— Selected.</span>
           </h2>
           <p className="section-sub">
-            引擎、工具与图形研发方向的部分代表作。
+            参与过的商业游戏项目。
           </p>
         </div>
 
