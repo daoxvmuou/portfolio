@@ -30,7 +30,7 @@ export const games = [
     id: 'game-3',
     title: '三国·无限',
     tagline: 'Infinity 三国志 · 战棋复刻',
-    cover: 'https://images.unsplash.com/photo-1601581875398-1a9b5a30eaf3?w=1200&q=80',
+    cover: '/games/infinity-sanguo.png',
     description:
       '《三国·无限》制作组主要由三国志11爱好者与游戏行业从业人员组成，以三国志11为蓝本重新复刻的三国志游戏。本作立足于复刻原版，并力争突破原版：修复原版部分不合理机制，添加更多有趣的策略玩法。\n\n核心特色：\n· 可扩展的城市与地形，更自由的武将立绘与暴击图\n· 无数量限制的宝物，更实用的特技设计\n· 重新安排 AI 调度，AI 更合理地利用资源攻城略地，而非依靠资源优势碾压\n· 外交活动更主动，玩家破局后转化策略玩法，攀登权力阶梯，减少后期枯燥\n· 军团委任更智能，坐看自己的势力问鼎中原',
     techStack: ['Unity', 'C#', 'Lua'],
