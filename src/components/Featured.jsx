@@ -6,7 +6,7 @@ export default function Featured() {
     <section id="featured" className="section featured">
       <div className="container">
         <div className="featured__head reveal">
-          <div className="section-label">02 / Featured Work</div>
+          <div className="section-label">03 / Featured Work</div>
           <h2 className="section-title">
             精选项目 <span className="featured__dim">— Selected.</span>
           </h2>

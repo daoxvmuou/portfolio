@@ -3,6 +3,7 @@ import './Navbar.css'
 
 const links = [
   { id: 'games', label: 'Games' },
+  { id: 'ai-games', label: 'AI Lab' },
   { id: 'featured', label: 'Featured' },
   { id: 'about', label: 'About' },
   { id: 'contact', label: 'Contact' },
@@ -15,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40)
-      const ids = ['hero', 'games', 'featured', 'about', 'contact']
+      const ids = ['hero', 'games', 'ai-games', 'featured', 'about', 'contact']
       let current = 'hero'
       for (const id of ids) {
         const el = document.getElementById(id)

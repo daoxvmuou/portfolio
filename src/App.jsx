@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import GameProjects from './components/GameProjects.jsx'
+import AiGames from './components/AiGames.jsx'
 import Featured from './components/Featured.jsx'
 import About from './components/About.jsx'
 import Footer from './components/Footer.jsx'
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <GameProjects />
+        <AiGames />
         <Featured />
         <About />
       </main>

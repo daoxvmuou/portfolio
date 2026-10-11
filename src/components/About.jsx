@@ -7,7 +7,7 @@ export default function About() {
       <div className="container">
         <div className="about__grid">
           <div className="about__left reveal">
-            <div className="section-label">03 / About</div>
+            <div className="section-label">04 / About</div>
             <h2 className="section-title">
               玩法、引擎与<br />体验的工程师。
             </h2>

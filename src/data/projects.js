@@ -57,6 +57,20 @@ export const games = [
   },
 ]
 
+// AI 小游戏 - 卡片点击后跳转到游玩链接（link 填写后即可跳转）
+export const aiGames = [
+  {
+    id: 'ai-1',
+    title: 'AI 小游戏',
+    category: 'AI Interactive · 在线游玩',
+    desc: '基于大模型能力打造的轻量互动小游戏，浏览器打开即可游玩，无需下载安装。',
+    techStack: ['LLM', 'Prompt', 'Web'],
+    cover: '',
+    link: '',
+    cta: '',
+  },
+]
+
 export const featured = [
   {
     id: 'f1',

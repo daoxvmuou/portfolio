@@ -9,7 +9,7 @@ export default function Footer() {
 
       <div className="footer__inner container">
         <div className="footer__top reveal">
-          <div className="footer__label">04 / Let&apos;s build together</div>
+          <div className="footer__label">05 / Let&apos;s build together</div>
           <h2 className="footer__title">
             有项目想法？
             <br />
