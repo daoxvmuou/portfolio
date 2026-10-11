@@ -14,7 +14,7 @@ export default function GameProjects() {
           <div>
             <div className="section-label">01 / Games</div>
             <h2 className="section-title">
-              可玩的项目，
+              独立游戏项目，
               <br />
               <span className="gp__accent">每一个都可下载。</span>
             </h2>
