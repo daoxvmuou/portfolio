@@ -66,7 +66,7 @@ export const aiGames = [
     desc: '基于大模型能力打造的轻量互动小游戏，浏览器打开即可游玩，无需下载安装。',
     techStack: ['LLM', 'Prompt', 'Web'],
     cover: '',
-    link: '',
+    link: 'https://tap.cn/lXWMYfNk1',
     cta: '',
   },
 ]
