@@ -61,13 +61,13 @@ export const games = [
 export const aiGames = [
   {
     id: 'ai-1',
-    title: 'AI 小游戏',
-    category: 'AI Interactive · 在线游玩',
-    desc: '基于大模型能力打造的轻量互动小游戏，浏览器打开即可游玩，无需下载安装。',
-    techStack: ['LLM', 'Prompt', 'Web'],
-    cover: '',
+    title: '元胞织界',
+    category: 'AI 涌现模拟 · TapTap 预约中',
+    desc: '以「纯涌现模拟」为核心的沙盒演化游戏。你不能直接命令元胞，只能编辑法则——调整趋聚引力、变异率与环境能量，观察生态在规则之下自行演化。',
+    techStack: ['纯涌现模拟', '沙盒演化', '元胞自动机'],
+    cover: '/ai-games/cover.jpg',
     link: 'https://tap.cn/lXWMYfNk1',
-    cta: '',
+    cta: '前往预约',
   },
 ]
 
